@@ -22,7 +22,9 @@ public class Sting2 : MonoBehaviour
         playerPos = GameObject.Find("Player").transform;
         Vector3 direction = (playerPos.position - transform.position).normalized;
         rigidbody2D.AddForce(new Vector2(direction.x, direction.y) * speed);
-        // transform.Rotate(new Vector3(0, 0, direction.z), Space.Self);
+
+        // Rotate the object 90 degrees
+        transform.rotation = Quaternion.Euler(0, 0, 90);
     }
 
     private void OnTriggerEnter(Collider other) 

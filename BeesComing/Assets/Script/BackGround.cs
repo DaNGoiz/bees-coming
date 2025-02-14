@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BackGround : MonoBehaviour
 {
-    public Transform cameraa;
+    public Transform mainCamera;
     void Start()
     {
         
@@ -13,7 +13,7 @@ public class BackGround : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(cameraa.position.x, cameraa.position.y, 0);
-        transform.rotation = cameraa.rotation;
+        transform.position = new Vector3(mainCamera.position.x, mainCamera.position.y, 0);
+        transform.rotation = mainCamera.rotation;
     }
 }

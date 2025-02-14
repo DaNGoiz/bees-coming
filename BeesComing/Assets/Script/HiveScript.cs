@@ -33,12 +33,6 @@ public class HiveScript : MonoBehaviour
                     temp.transform.parent = GameObject.Find("BeeParent").transform;
                 }
             }
-
-
-
-
-            
         }
-
     }
 }
