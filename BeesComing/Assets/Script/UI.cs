@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -7,15 +5,9 @@ using UnityEngine.SceneManagement;
 public class UI : MonoBehaviour
 {
     public static UI uI;
-    /*public List<GameObject> health;
-    public List<GameObject> shields;*/
 
     public Text health, shields,scourse;
     
-    void Start()
-    {
-        
-    }
     void Update()
     {
         Health();

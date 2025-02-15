@@ -5,12 +5,7 @@ using UnityEngine;
 public class BackGround : MonoBehaviour
 {
     public Transform mainCamera;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         transform.position = new Vector3(mainCamera.position.x, mainCamera.position.y, 0);
